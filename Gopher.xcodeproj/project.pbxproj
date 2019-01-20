@@ -1,0 +1,660 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1F8283D121F33580000452DB /* Gopher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F8283D021F33580000452DB /* Gopher.swift */; };
+		1F8283D521F33774000452DB /* SpriteLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F8283D421F33774000452DB /* SpriteLoader.swift */; };
+		1F8283D721F346EF000452DB /* GophersCanvas.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F8283D621F346EF000452DB /* GophersCanvas.swift */; };
+		1F8283D921F34798000452DB /* GopheraScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F8283D821F34798000452DB /* GopheraScene.swift */; };
+		1F8283DD21F34E73000452DB /* gophers.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1F8283DB21F34E72000452DB /* gophers.plist */; };
+		1F8283E221F3C5C7000452DB /* hit_sound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 1F8283E121F3C5C7000452DB /* hit_sound.mp3 */; };
+		1F8283E421F3C5CE000452DB /* background.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 1F8283E321F3C5CE000452DB /* background.mp3 */; };
+		1F8283E621F3C674000452DB /* error.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 1F8283E521F3C674000452DB /* error.mp3 */; };
+		1F8283F921F3D176000452DB /* gophers.png in Resources */ = {isa = PBXBuildFile; fileRef = 1F8283F621F3D175000452DB /* gophers.png */; };
+		1F8283FA21F3D176000452DB /* background.png in Resources */ = {isa = PBXBuildFile; fileRef = 1F8283F721F3D175000452DB /* background.png */; };
+		1F8283FB21F3D176000452DB /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 1F8283F821F3D175000452DB /* logo.png */; };
+		1F8283FD21F3DF71000452DB /* starnight.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1F8283FC21F3DF71000452DB /* starnight.jpg */; };
+		1F8283FF21F3E097000452DB /* bluesky.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1F8283FE21F3E097000452DB /* bluesky.jpg */; };
+		1F82840121F3E176000452DB /* morning.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 1F82840021F3E176000452DB /* morning.jpeg */; };
+		1F82840321F3E24E000452DB /* haze.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 1F82840221F3E24E000452DB /* haze.jpeg */; };
+		1F82840521F3E2E1000452DB /* grey.png in Resources */ = {isa = PBXBuildFile; fileRef = 1F82840421F3E2E1000452DB /* grey.png */; };
+		1F82840721F3F419000452DB /* GameWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F82840621F3F419000452DB /* GameWindow.swift */; };
+		1FC41F5B21F2D8B4009FA56D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FC41F5A21F2D8B4009FA56D /* AppDelegate.swift */; };
+		1FC41F5D21F2D8B4009FA56D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FC41F5C21F2D8B4009FA56D /* ViewController.swift */; };
+		1FC41F5F21F2D8B5009FA56D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1FC41F5E21F2D8B5009FA56D /* Assets.xcassets */; };
+		1FC41F6221F2D8B5009FA56D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1FC41F6021F2D8B5009FA56D /* Main.storyboard */; };
+		1FC41F6E21F2D8B5009FA56D /* GopherTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FC41F6D21F2D8B5009FA56D /* GopherTests.swift */; };
+		1FC41F7921F2D8B5009FA56D /* GopherUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FC41F7821F2D8B5009FA56D /* GopherUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1FC41F6A21F2D8B5009FA56D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1FC41F4F21F2D8B4009FA56D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1FC41F5621F2D8B4009FA56D;
+			remoteInfo = Gopher;
+		};
+		1FC41F7521F2D8B5009FA56D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1FC41F4F21F2D8B4009FA56D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1FC41F5621F2D8B4009FA56D;
+			remoteInfo = Gopher;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1F8283D021F33580000452DB /* Gopher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gopher.swift; sourceTree = "<group>"; };
+		1F8283D421F33774000452DB /* SpriteLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpriteLoader.swift; sourceTree = "<group>"; };
+		1F8283D621F346EF000452DB /* GophersCanvas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GophersCanvas.swift; sourceTree = "<group>"; };
+		1F8283D821F34798000452DB /* GopheraScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GopheraScene.swift; sourceTree = "<group>"; };
+		1F8283DB21F34E72000452DB /* gophers.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = gophers.plist; sourceTree = "<group>"; };
+		1F8283E121F3C5C7000452DB /* hit_sound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = hit_sound.mp3; sourceTree = "<group>"; };
+		1F8283E321F3C5CE000452DB /* background.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = background.mp3; sourceTree = "<group>"; };
+		1F8283E521F3C674000452DB /* error.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = error.mp3; sourceTree = "<group>"; };
+		1F8283F621F3D175000452DB /* gophers.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gophers.png; sourceTree = "<group>"; };
+		1F8283F721F3D175000452DB /* background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = background.png; sourceTree = "<group>"; };
+		1F8283F821F3D175000452DB /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
+		1F8283FC21F3DF71000452DB /* starnight.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = starnight.jpg; sourceTree = "<group>"; };
+		1F8283FE21F3E097000452DB /* bluesky.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = bluesky.jpg; sourceTree = "<group>"; };
+		1F82840021F3E176000452DB /* morning.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = morning.jpeg; sourceTree = "<group>"; };
+		1F82840221F3E24E000452DB /* haze.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = haze.jpeg; sourceTree = "<group>"; };
+		1F82840421F3E2E1000452DB /* grey.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = grey.png; sourceTree = "<group>"; };
+		1F82840621F3F419000452DB /* GameWindow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameWindow.swift; sourceTree = "<group>"; };
+		1FC41F5721F2D8B4009FA56D /* Gopher.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Gopher.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1FC41F5A21F2D8B4009FA56D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		1FC41F5C21F2D8B4009FA56D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		1FC41F5E21F2D8B5009FA56D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1FC41F6121F2D8B5009FA56D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1FC41F6321F2D8B5009FA56D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1FC41F6421F2D8B5009FA56D /* Gopher.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Gopher.entitlements; sourceTree = "<group>"; };
+		1FC41F6921F2D8B5009FA56D /* GopherTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GopherTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1FC41F6D21F2D8B5009FA56D /* GopherTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GopherTests.swift; sourceTree = "<group>"; };
+		1FC41F6F21F2D8B5009FA56D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1FC41F7421F2D8B5009FA56D /* GopherUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GopherUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1FC41F7821F2D8B5009FA56D /* GopherUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GopherUITests.swift; sourceTree = "<group>"; };
+		1FC41F7A21F2D8B5009FA56D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1FC41F5421F2D8B4009FA56D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1FC41F6621F2D8B5009FA56D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1FC41F7121F2D8B5009FA56D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1F8283E021F3C16F000452DB /* Sound */ = {
+			isa = PBXGroup;
+			children = (
+				1F8283E521F3C674000452DB /* error.mp3 */,
+				1F8283E321F3C5CE000452DB /* background.mp3 */,
+				1F8283E121F3C5C7000452DB /* hit_sound.mp3 */,
+			);
+			path = Sound;
+			sourceTree = "<group>";
+		};
+		1F8283F521F3D175000452DB /* Image */ = {
+			isa = PBXGroup;
+			children = (
+				1F82840421F3E2E1000452DB /* grey.png */,
+				1F82840221F3E24E000452DB /* haze.jpeg */,
+				1F82840021F3E176000452DB /* morning.jpeg */,
+				1F8283FE21F3E097000452DB /* bluesky.jpg */,
+				1F8283FC21F3DF71000452DB /* starnight.jpg */,
+				1F8283F621F3D175000452DB /* gophers.png */,
+				1F8283F721F3D175000452DB /* background.png */,
+				1F8283F821F3D175000452DB /* logo.png */,
+			);
+			path = Image;
+			sourceTree = "<group>";
+		};
+		1FC41F4E21F2D8B4009FA56D = {
+			isa = PBXGroup;
+			children = (
+				1FC41F5921F2D8B4009FA56D /* Gopher */,
+				1FC41F6C21F2D8B5009FA56D /* GopherTests */,
+				1FC41F7721F2D8B5009FA56D /* GopherUITests */,
+				1FC41F5821F2D8B4009FA56D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1FC41F5821F2D8B4009FA56D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1FC41F5721F2D8B4009FA56D /* Gopher.app */,
+				1FC41F6921F2D8B5009FA56D /* GopherTests.xctest */,
+				1FC41F7421F2D8B5009FA56D /* GopherUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1FC41F5921F2D8B4009FA56D /* Gopher */ = {
+			isa = PBXGroup;
+			children = (
+				1F8283F521F3D175000452DB /* Image */,
+				1F8283E021F3C16F000452DB /* Sound */,
+				1FC41F5A21F2D8B4009FA56D /* AppDelegate.swift */,
+				1FC41F5C21F2D8B4009FA56D /* ViewController.swift */,
+				1FC41F5E21F2D8B5009FA56D /* Assets.xcassets */,
+				1FC41F6021F2D8B5009FA56D /* Main.storyboard */,
+				1FC41F6321F2D8B5009FA56D /* Info.plist */,
+				1FC41F6421F2D8B5009FA56D /* Gopher.entitlements */,
+				1F8283D021F33580000452DB /* Gopher.swift */,
+				1F8283D421F33774000452DB /* SpriteLoader.swift */,
+				1F8283DB21F34E72000452DB /* gophers.plist */,
+				1F8283D621F346EF000452DB /* GophersCanvas.swift */,
+				1F8283D821F34798000452DB /* GopheraScene.swift */,
+				1F82840621F3F419000452DB /* GameWindow.swift */,
+			);
+			path = Gopher;
+			sourceTree = "<group>";
+		};
+		1FC41F6C21F2D8B5009FA56D /* GopherTests */ = {
+			isa = PBXGroup;
+			children = (
+				1FC41F6D21F2D8B5009FA56D /* GopherTests.swift */,
+				1FC41F6F21F2D8B5009FA56D /* Info.plist */,
+			);
+			path = GopherTests;
+			sourceTree = "<group>";
+		};
+		1FC41F7721F2D8B5009FA56D /* GopherUITests */ = {
+			isa = PBXGroup;
+			children = (
+				1FC41F7821F2D8B5009FA56D /* GopherUITests.swift */,
+				1FC41F7A21F2D8B5009FA56D /* Info.plist */,
+			);
+			path = GopherUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1FC41F5621F2D8B4009FA56D /* Gopher */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1FC41F7D21F2D8B5009FA56D /* Build configuration list for PBXNativeTarget "Gopher" */;
+			buildPhases = (
+				1FC41F5321F2D8B4009FA56D /* Sources */,
+				1FC41F5421F2D8B4009FA56D /* Frameworks */,
+				1FC41F5521F2D8B4009FA56D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Gopher;
+			productName = Gopher;
+			productReference = 1FC41F5721F2D8B4009FA56D /* Gopher.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1FC41F6821F2D8B5009FA56D /* GopherTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1FC41F8021F2D8B5009FA56D /* Build configuration list for PBXNativeTarget "GopherTests" */;
+			buildPhases = (
+				1FC41F6521F2D8B5009FA56D /* Sources */,
+				1FC41F6621F2D8B5009FA56D /* Frameworks */,
+				1FC41F6721F2D8B5009FA56D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1FC41F6B21F2D8B5009FA56D /* PBXTargetDependency */,
+			);
+			name = GopherTests;
+			productName = GopherTests;
+			productReference = 1FC41F6921F2D8B5009FA56D /* GopherTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		1FC41F7321F2D8B5009FA56D /* GopherUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1FC41F8321F2D8B5009FA56D /* Build configuration list for PBXNativeTarget "GopherUITests" */;
+			buildPhases = (
+				1FC41F7021F2D8B5009FA56D /* Sources */,
+				1FC41F7121F2D8B5009FA56D /* Frameworks */,
+				1FC41F7221F2D8B5009FA56D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1FC41F7621F2D8B5009FA56D /* PBXTargetDependency */,
+			);
+			name = GopherUITests;
+			productName = GopherUITests;
+			productReference = 1FC41F7421F2D8B5009FA56D /* GopherUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1FC41F4F21F2D8B4009FA56D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "WENBO JIANG";
+				TargetAttributes = {
+					1FC41F5621F2D8B4009FA56D = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					1FC41F6821F2D8B5009FA56D = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 1FC41F5621F2D8B4009FA56D;
+					};
+					1FC41F7321F2D8B5009FA56D = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 1FC41F5621F2D8B4009FA56D;
+					};
+				};
+			};
+			buildConfigurationList = 1FC41F5221F2D8B4009FA56D /* Build configuration list for PBXProject "Gopher" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1FC41F4E21F2D8B4009FA56D;
+			productRefGroup = 1FC41F5821F2D8B4009FA56D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1FC41F5621F2D8B4009FA56D /* Gopher */,
+				1FC41F6821F2D8B5009FA56D /* GopherTests */,
+				1FC41F7321F2D8B5009FA56D /* GopherUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1FC41F5521F2D8B4009FA56D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F8283FF21F3E097000452DB /* bluesky.jpg in Resources */,
+				1FC41F5F21F2D8B5009FA56D /* Assets.xcassets in Resources */,
+				1F82840521F3E2E1000452DB /* grey.png in Resources */,
+				1F8283E221F3C5C7000452DB /* hit_sound.mp3 in Resources */,
+				1FC41F6221F2D8B5009FA56D /* Main.storyboard in Resources */,
+				1F8283E421F3C5CE000452DB /* background.mp3 in Resources */,
+				1F8283E621F3C674000452DB /* error.mp3 in Resources */,
+				1F82840321F3E24E000452DB /* haze.jpeg in Resources */,
+				1F82840121F3E176000452DB /* morning.jpeg in Resources */,
+				1F8283FB21F3D176000452DB /* logo.png in Resources */,
+				1F8283FD21F3DF71000452DB /* starnight.jpg in Resources */,
+				1F8283F921F3D176000452DB /* gophers.png in Resources */,
+				1F8283FA21F3D176000452DB /* background.png in Resources */,
+				1F8283DD21F34E73000452DB /* gophers.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1FC41F6721F2D8B5009FA56D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1FC41F7221F2D8B5009FA56D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1FC41F5321F2D8B4009FA56D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F8283D121F33580000452DB /* Gopher.swift in Sources */,
+				1F8283D721F346EF000452DB /* GophersCanvas.swift in Sources */,
+				1FC41F5D21F2D8B4009FA56D /* ViewController.swift in Sources */,
+				1F8283D921F34798000452DB /* GopheraScene.swift in Sources */,
+				1FC41F5B21F2D8B4009FA56D /* AppDelegate.swift in Sources */,
+				1F82840721F3F419000452DB /* GameWindow.swift in Sources */,
+				1F8283D521F33774000452DB /* SpriteLoader.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1FC41F6521F2D8B5009FA56D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1FC41F6E21F2D8B5009FA56D /* GopherTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1FC41F7021F2D8B5009FA56D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1FC41F7921F2D8B5009FA56D /* GopherUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1FC41F6B21F2D8B5009FA56D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1FC41F5621F2D8B4009FA56D /* Gopher */;
+			targetProxy = 1FC41F6A21F2D8B5009FA56D /* PBXContainerItemProxy */;
+		};
+		1FC41F7621F2D8B5009FA56D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1FC41F5621F2D8B4009FA56D /* Gopher */;
+			targetProxy = 1FC41F7521F2D8B5009FA56D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		1FC41F6021F2D8B5009FA56D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1FC41F6121F2D8B5009FA56D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1FC41F7B21F2D8B5009FA56D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		1FC41F7C21F2D8B5009FA56D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		1FC41F7E21F2D8B5009FA56D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Gopher/Gopher.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = Gopher/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = test.Gopher;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+			};
+			name = Debug;
+		};
+		1FC41F7F21F2D8B5009FA56D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Gopher/Gopher.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = Gopher/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = test.Gopher;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+			};
+			name = Release;
+		};
+		1FC41F8121F2D8B5009FA56D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = GopherTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = test.GopherTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Gopher.app/Contents/MacOS/Gopher";
+			};
+			name = Debug;
+		};
+		1FC41F8221F2D8B5009FA56D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = GopherTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = test.GopherTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Gopher.app/Contents/MacOS/Gopher";
+			};
+			name = Release;
+		};
+		1FC41F8421F2D8B5009FA56D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = GopherUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = test.GopherUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TEST_TARGET_NAME = Gopher;
+			};
+			name = Debug;
+		};
+		1FC41F8521F2D8B5009FA56D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = GopherUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = test.GopherUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TEST_TARGET_NAME = Gopher;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1FC41F5221F2D8B4009FA56D /* Build configuration list for PBXProject "Gopher" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1FC41F7B21F2D8B5009FA56D /* Debug */,
+				1FC41F7C21F2D8B5009FA56D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1FC41F7D21F2D8B5009FA56D /* Build configuration list for PBXNativeTarget "Gopher" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1FC41F7E21F2D8B5009FA56D /* Debug */,
+				1FC41F7F21F2D8B5009FA56D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1FC41F8021F2D8B5009FA56D /* Build configuration list for PBXNativeTarget "GopherTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1FC41F8121F2D8B5009FA56D /* Debug */,
+				1FC41F8221F2D8B5009FA56D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1FC41F8321F2D8B5009FA56D /* Build configuration list for PBXNativeTarget "GopherUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1FC41F8421F2D8B5009FA56D /* Debug */,
+				1FC41F8521F2D8B5009FA56D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1FC41F4F21F2D8B4009FA56D /* Project object */;
+}
