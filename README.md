@@ -19,15 +19,16 @@
 Mac Laptop with touchbar (obviously).
 
 ## Installation:
-You could either directly download the executable directly [here](https://drive.google.com/file/d/1ZeL0nK-6G93X-8QWYjPV8TFJNg18wn8G/view?usp=sharing) (recommended).
-
-Or you could open the project in XCode, see _Build&amp;Run_
+You could either directly download the executable directly [here](https://drive.google.com/file/d/1ZeL0nK-6G93X-8QWYjPV8TFJNg18wn8G/view?usp=sharing) (recommended). Or see _Build&amp;Run_
 
 ## Build &amp; Run
+Open your XCode
+```
 xcodebuild clean build CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO
 open build/Release/Gopher.app
+```
 
-## Sidenote &amp;Acknowledgement
-This is a project built under 24 hours during a [hackathon](https://hacknroll.nushackers.org/), paired programmed by [Alex Xiong](https://github.com/AlexXiong97) and [Jiang Wenbo](https://github.com/Lancerchiang). 
+## Sidenote &amp; Acknowledgement
+This is a project built under 24 hours during a [hackathon](https://hacknroll.nushackers.org/), pair-programmed by [Alex Xiong](https://github.com/AlexXiong97) and [Jiang Wenbo](https://github.com/Lancerchiang). 
 
 Special thanks to [Zeng Junhao](https://github.com/Jun0413) and [Lu Zhenyuan](https://github.com/CodeXana0001) for being awesome teammates and offering invaluable help during development.
